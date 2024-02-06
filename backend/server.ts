@@ -154,7 +154,7 @@ app.patch('/api/cars/:id', (request, response) => {
   const body = request.body;
   let carToUpdate = luxuryCars.find((car) => car.id === id);
   if (!carToUpdate) {
-    return response.status(404).json({ error: 'Car not found' });
+    return response.status(404).json({ error: 'Car not found' }).end();
   }
 
   if (body.brand) {

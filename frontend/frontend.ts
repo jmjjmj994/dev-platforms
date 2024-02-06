@@ -2,6 +2,7 @@ const baseUrl = 'http://localhost:3001/api/cars';
 const body = document.querySelector('body') as HTMLBodyElement;
 
 interface FetchedData {
+  id: number;
   brand: string;
   color: string;
   model: string;
@@ -49,6 +50,7 @@ const displayData = async () => {
     .map((cars: FetchedData) => {
       console.log(cars);
       return `
+      <p>${cars.id} </>
     <p>${cars.brand} </>
     <p>${cars.model} </>
     <p>${cars.color} </>
