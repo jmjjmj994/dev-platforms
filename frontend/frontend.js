@@ -34,7 +34,7 @@ const displayData = async () => {
         .map((cars) => {
         console.log(cars);
         return `
-      <p>${cars.id} </>
+    <p>${cars.id} </>
     <p>${cars.brand} </>
     <p>${cars.model} </>
     <p>${cars.color} </>
