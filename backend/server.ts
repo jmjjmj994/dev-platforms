@@ -5,8 +5,10 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
+const randomId = Math.floor(Math.random()* 10000)
 const luxuryCars = [
   {
+    id:randomId,
     brand: 'Mercedes-Benz',
     model: 'S-Class',
     color: 'Black',
@@ -14,6 +16,7 @@ const luxuryCars = [
     year: 2022,
   },
   {
+    id:randomId,
     brand: 'Mercedes-Benz',
     model: 'E-Class',
     color: 'Silver',
@@ -21,6 +24,7 @@ const luxuryCars = [
     year: 2023,
   },
   {
+    id:randomId,
     brand: 'BMW',
     model: '7 Series',
     color: 'Blue',
@@ -28,6 +32,7 @@ const luxuryCars = [
     year: 2022,
   },
   {
+    id:randomId,
     brand: 'BMW',
     model: 'X5',
     color: 'White',
@@ -35,6 +40,7 @@ const luxuryCars = [
     year: 2023,
   },
   {
+    id:randomId,
     brand: 'Porsche',
     model: '911',
     color: 'Red',
@@ -42,6 +48,7 @@ const luxuryCars = [
     year: 2022,
   },
   {
+    id:randomId,
     brand: 'Porsche',
     model: 'Cayenne',
     color: 'Gray',
@@ -49,6 +56,7 @@ const luxuryCars = [
     year: 2023,
   },
   {
+    id:randomId,
     brand: 'Audi',
     model: 'A8',
     color: 'Green',
@@ -56,6 +64,7 @@ const luxuryCars = [
     year: 2022,
   },
   {
+    id:randomId,
     brand: 'Audi',
     model: 'Q7',
     color: 'Brown',
@@ -63,6 +72,7 @@ const luxuryCars = [
     year: 2023,
   },
   {
+    id:randomId,
     brand: 'Bentley',
     model: 'Continental GT',
     color: 'Purple',
@@ -70,6 +80,7 @@ const luxuryCars = [
     year: 2022,
   },
   {
+    id:randomId,
     brand: 'Bentley',
     model: 'Bentayga',
     color: 'Gold',
